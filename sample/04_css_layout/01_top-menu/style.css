@@ -1,0 +1,40 @@
+.wrap {
+
+  /*
+    最大幅を 980px として、画面の中央にくるようにします。
+
+    省略して書くと以下のようにもかけます。
+    max-width: 980px;
+    margin: 0 auto;
+  */
+  max-width: 980px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*
+    構造がわかりやすいように色をつけます。
+    適宜けします。
+   */
+  background: #ff0;
+
+}
+
+
+/*
+  リスト表示ではなく横並びにするためにスタイルを設定します。
+*/
+.menu {
+  padding: 0;
+}
+
+.menu li {
+  /* リストスタイルをやめる */
+  list-style: none;
+
+  /* 表示モードを inline 要素に変更 */
+  display: inline;
+  /*文字の右側に1文字分の隙間をつくる*/
+  margin-right: 1em;
+}

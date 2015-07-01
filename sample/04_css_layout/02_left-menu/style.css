@@ -1,0 +1,83 @@
+/*
+  micro clearfix
+  左右のボックスレイアウトをする時のおまじないだと思ってください。
+ */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*IE6,7対策 （haslayout対策）*/
+.cf {
+  *zoom: 1;
+}
+
+/*
+    最大幅を 980px として、画面の中央にくるようにします。
+
+    省略して書くと以下のようにもかけます。
+    max-width: 980px;
+    margin: 0 auto;
+  */
+.wrap {
+  max-width: 980px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  リスト表示ではなく横並びにするためにスタイルを設定します。
+  float をつかって左側にメニューを、右側にコンテンツを持ってきます。
+*/
+.menu {
+  padding: 0;
+
+  /*
+    幅 30% で左にします
+  */
+  width: 30%;
+  float: left;
+}
+
+.menu li {
+  /* リストスタイルをやめる */
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.main {
+  /*
+    幅 70% で右の位置にします
+  */
+  width: 70%;
+  float: right;
+
+}
+
+/*
+  構造がわかりやすいように色をつけます。
+  適宜けします。
+*/
+
+.wrap {
+  background: #ff0;
+}
+
+.main {
+  background: #0f0;
+}
+
+.menu {
+  background: #f00;
+}
+
+.menu li {
+  background: #f99;
+}
