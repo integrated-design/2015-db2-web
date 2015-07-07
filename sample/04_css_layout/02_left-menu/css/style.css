@@ -1,21 +1,3 @@
-/*
-  micro clearfix
-  左右のボックスレイアウトをする時のおまじないだと思ってください。
- */
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-/*IE6,7対策 （haslayout対策）*/
-.cf {
-  *zoom: 1;
-}
 
 /*
     最大幅を 980px として、画面の中央にくるようにします。
