@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>レイアウト</title>
+
+  <!-- ここで css を別のファイルから読み込んでいます -->
+  <link rel="stylesheet" href="../css/override/normalize.css"/>
+  <link rel="stylesheet" href="../css/override/utils.css"/>
+
+  <!-- ここまで: このページのスタイルシート -->
+  <style>
+    .layout-left{
+      width: 640px;
+      height: 640px;
+      background: #ccffff;
+
+    }
+
+    .layout-center{
+      width: 640px;
+      height: 640px;
+      background: #ffccff;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .layout-right{
+      width: 640px;
+      height: 640px;
+      background: #ffffcc;
+
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+  </style>
+  <!-- ここまで: このページのスタイルシート -->
+
+</head>
+<body>
+
+<div class="layout-left">左寄せのボックス</div>
+
+<div class="layout-center">中央寄せのボックス</div>
+
+<div class="layout-right">右寄せのボックス</div>
+
+</body>
+</html>

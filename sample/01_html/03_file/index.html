@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>いろいろな場所からファイルを読みこむ</title>
+</head>
+<body>
+
+<!-- 外部のファイルを読み込みます -->
+
+
+<!-- 同じディレクトリから読みこむ -->
+<img src="images/blue.jpg" width="160" height="90" alt=""/>
+
+
+
+<!--
+  # 外部のサイトから読みこむ
+  勝手に外部のサイトから読みこむと相手のサーバ負荷が上がり迷惑がかかりますので、あまりやらないようにしましょう。
+ -->
+<img src="http://www.tamabi.ac.jp/integrated/assets/images/main_integrated.png" alt=""/>
+
+
+<!--
+  別のディレクトリから読みこむ
+  画像を別のディレクトリ(フォルダ) から読み込みます。
+  「../」は「自分 (index.html) のひとつ上のフォルダ」という意味です。
+
+  下記の "../01_html/images/red.jpg" 場合、
+  『「ひとつ上のフォルダ」の、「01_html」というフォルダのなかの、「images」というフォルダのなかの、「red.jpg」 を読みこむ』
+  という指定になります。
+-->
+<img src="../01_html/images/red.jpg" width="160" height="90" alt=""/>
+</body>
+</html>
