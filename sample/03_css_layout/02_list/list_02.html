@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>リスト表示 1 横並び</title>
+  <title>リスト表示 2 ブロック横並び</title>
 
   <!-- ここで css を別のファイルから読み込んでいます -->
-  <link rel="stylesheet" href="css/override/normalize.css"/>
-  <link rel="stylesheet" href="css/override/utils.css"/>
+  <link rel="stylesheet" href="../css/override/normalize.css"/>
+  <link rel="stylesheet" href="../css/override/utils.css"/>
 
   <!-- ここまで: このページのスタイルシート -->
   <style>
@@ -19,18 +19,27 @@
       margin-right: auto;
     }
 
-    .list-01{
-
-    }
-    .list-01 li{
+    .list-01 {
+      margin: 0;
+      padding: 0;
       list-style: none;
+      background: #ff3;
+    }
 
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-bottom-color: #000;
+    .list-01 li {
+      /*
+        ブロックを左に巻き込むようにします。
+      */
+      float: left;
 
-      padding-top: 10px;
-      padding-bottom: 10px;
+      /*
+        要素ごとの高さと幅を指定します。
+      */
+      margin: 0.5%;
+      width: 24%;
+      height: 200px;
+
+      background: #3ff;
     }
 
   </style>
@@ -38,14 +47,15 @@
 
 </head>
 <body>
-
-<!-- 全体を中央に配置するために wrap という div で囲います -->
 <div class="wrap">
-
-  <!-- ここがメインのコンテンツエリアです -->
   <div class="main">
 
-    <ul class="list-01">
+    <!--
+    cf は clearfix というテクニックで、 float による回り込みを解除するためのものです。
+    -->
+    <h2>cf あり</h2>
+
+    <ul class="list-01 cf">
       <li>list 1</li>
       <li>list 2</li>
       <li>list 3</li>
@@ -69,10 +79,8 @@
     </ul>
 
   </div>
-  <!-- .main はここまで -->
-
 </div>
-<!-- .wrap はここまでです -->
 
 </body>
 </html>
+

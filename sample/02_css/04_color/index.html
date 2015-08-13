@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>文字のデザインを変える</title>
+  <title>色を指定する</title>
 
 
   <!-- CSS の定義 -->
@@ -12,6 +12,7 @@
       background-color: #ccc;
     }
 
+    /*　16進数で指定　*/
     .red-01 {
       width: 100px;
       height: 100px;
@@ -19,25 +20,22 @@
       background-color: #ff0000;
     }
 
+    /*　
+      16進数で指定
+      - ff は f １つに省略できる
+      - f00 は ff0000 と同じ
+    */
     .red-02 {
       width: 125px;
       height: 125px;
       background-color: #f00;
     }
 
-    .red-03 {
-      width: 150px;
-      height: 150px;
-
-      background-color: red;
-    }
-
-    .red-04 {
-      width: 175px;
-      height: 175px;
-
-      background-color: rgb(255, 0, 0);
-    }
+    /*　
+      RGB + alpha(透明度) の値で指定
+      - rgb をそれぞれ 0~255 の間で指定する
+      - 最後は透明度をあらわす。 0.5 で 50% の透明度の意味
+    */
 
     .red-05 {
       width: 200px;
@@ -56,14 +54,6 @@
 <hr>
 
 <div class="red-02"></div>
-
-<hr>
-
-<div class="red-03"></div>
-
-<hr>
-
-<div class="red-04"></div>
 
 <hr>
 

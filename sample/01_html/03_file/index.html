@@ -2,12 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>いろいろな場所からファイルを読みこむ</title>
+  <title>いろいろなディレクトリから画像ファイルを読みこむ</title>
 </head>
 <body>
 
-<!-- 外部のファイルを読み込みます -->
-
+<h1>画像ファイルを読みこむ</h1>
 
 <!-- 同じディレクトリから読みこむ -->
 <img src="images/blue.jpg" width="160" height="90" alt=""/>
@@ -21,15 +20,23 @@
 <img src="http://www.tamabi.ac.jp/integrated/assets/images/main_integrated.png" alt=""/>
 
 
+
 <!--
   別のディレクトリから読みこむ
   画像を別のディレクトリ(フォルダ) から読み込みます。
-  「../」は「自分 (index.html) のひとつ上のフォルダ」という意味です。
+  「../」は「自分 (index.html) のひとつ上のフォルダ」という意味です。相対パスという。
 
   下記の "../01_html/images/red.jpg" 場合、
   『「ひとつ上のフォルダ」の、「01_html」というフォルダのなかの、「images」というフォルダのなかの、「red.jpg」 を読みこむ』
   という指定になります。
 -->
 <img src="../01_html/images/red.jpg" width="160" height="90" alt=""/>
+
+
+
+<!--
+  いったりきたりしても、結局は `上` と同じファイルをみつけて読み込んでいる。
+-->
+<img src="../01_html/../01_html/images/../../01_html/images/red.jpg" width="160" height="90" alt=""/>
 </body>
 </html>
