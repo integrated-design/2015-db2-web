@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>マウスに反応して色をかえる</title>
+
+
+  <!-- CSS の定義 -->
+  <style>
+
+    body {
+      background-color: #ccc;
+    }
+
+    .block {
+      width: 200px;
+      height: 200px;
+    }
+
+    .color-action {
+      background: #f33;
+    }
+
+    .color-action:hover {
+      background: #3f3;
+    }
+
+    .color-action:active {
+      background: #33f;
+    }
+
+    .border-action {
+      border-color: #000;
+      border-width: 5px;
+      border-style: solid;
+    }
+
+    .border-action:hover {
+      border-style: dotted;
+    }
+
+    .border-action:active {
+      border-style: double;
+    }
+
+    .link{
+      text-decoration: underline;
+      color: #0000ff;
+    }
+
+    .link:hover{
+      text-decoration: dotted;
+      color: #ff0000;
+    }
+
+    .link:active{
+      text-decoration: none;
+      color: #0000ff;
+    }
+  </style>
+
+</head>
+<body>
+
+<h2>マウスに反応して色がかわる</h2>
+
+<div class="block color-action"></div>
+
+
+<h2>マウスに反応してボーダーがかわる</h2>
+
+<div class="block border-action"></div>
+
+<h2>マウスに反応して文字の装飾がかわる</h2>
+
+<a class="link" href="#">サンプル サンプル サンプル サンプル</a>
+
+</body>
+</html>
