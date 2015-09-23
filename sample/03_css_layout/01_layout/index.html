@@ -4,46 +4,54 @@
   <meta charset="UTF-8">
   <title>レイアウト</title>
 
-  <!-- この 2行はおまじないだと思って無視してください -->
-  <link rel="stylesheet" href="../css/override/normalize.css"/>
-  <link rel="stylesheet" href="../css/override/utils.css"/>
-
   <style>
-    .layout-left{
-      width: 640px;
-      height: 640px;
-      background: #33ffff;
-
+    span {
+      border: 1px solid #f00;
+      background: rgba(255, 0, 0, 0.2);
     }
 
-    .layout-center{
-      width: 640px;
-      height: 640px;
-      background: #ff33ff;
-
-      margin-left: auto;
-      margin-right: auto;
+    p {
+      border: 1px solid #00f;
+      background: rgba(0, 0, 255, 0.2);
     }
 
-    .layout-right{
-      width: 640px;
-      height: 640px;
-      background: #ffff33;
+    .blue {
+      color: #00f;
+    }
 
-      margin-left: auto;
-      margin-right: 0;
+    .red {
+      color: #f00;
     }
 
   </style>
-
 </head>
 <body>
 
-<div class="layout-left">左寄せのボックス</div>
+<h1>html の 2つの要素</h1>
 
-<div class="layout-center">中央寄せのボックス</div>
+<p>html には <b class="blue">ブロックレベル要素</b> と <b class="red">インライン要素</b> が存在します。</p>
 
-<div class="layout-right">右寄せのボックス</div>
+
+<hr>
+
+<h2>block 要素</h2>
+
+<p>ブロックレベル要素は、見出し・段落・表など、文書を構成する基本となる要素で、一つのブロック（かたまり）として認識されます。 ブラウザでの表示も一つのかたまりとして扱われることが多く、一般的なブラウザでは前後に改行が入ります。(<a
+        href="http://www.htmq.com/htmlkihon/005.shtml">html クイックリファレンス</a> より)</p>
+
+<p><span>&lt;address&gt;、&lt;blockquote&gt;、&lt;center&gt;、&lt;div&gt;、&lt;dl&gt;、&lt;fieldset&gt;、&lt;form&gt;、&lt;h1&gt;-&lt;h6&gt;、&lt;hr&gt;、&lt;noframes&gt;、&lt;noscript&gt;、&lt;ol&gt;、&lt;p&gt;、&lt;pre&gt;、&lt;table&gt;、&lt;ul&gt;など</span>
+</p>
+
+<hr>
+
+<h2>inline 要素</h2>
+
+<p>インライン要素は、主にブロックレベル要素の内容として用いられる要素で、文章の一部として扱われます。 例えば要素の中の<span>要素のように、段落のなかの一部を強調するような使われ方をする要素</span>です。 一般的なブラウザでは前後に改行が入らず、文章の一部として表示されます。(<a
+        href="http://www.htmq.com/htmlkihon/005.shtml">html クイックリファレンス</a> より)</p>
+
+<p><span>&lt;a&gt;、&lt;abbr&gt;、&lt;acronym&gt;、&lt;b&gt;、&lt;basefont&gt;、&lt;bdo&gt;、&lt;big&gt;、&lt;br&gt;、&lt;cite&gt;、&lt;code&gt;、&lt;dfn&gt;、&lt;em&gt;、&lt;font&gt;、&lt;i&gt;、&lt;img&gt;、&lt;input&gt;、&lt;kbd&gt;、&lt;label&gt;、&lt;q&gt;、&lt;s&gt;、&lt;samp&gt;、&lt;select&gt;、  &lt;small&gt;、&lt;span&gt;、&lt;strike&gt;、&lt;strong&gt;、&lt;sub&gt;、&lt;sup&gt;、&lt;textarea&gt;、&lt;tt&gt;、&lt;u&gt;、&lt;var&gt;</span>
+</p>
+
 
 </body>
 </html>
