@@ -9,16 +9,19 @@
   <!-- CSS はここから -->
   <style>
     .color-red {
-      color: #ff3333;
+      color: #ff0000;
       /*
         color: red;
         color: rgb(255,255,255);
         とも書くことができます。
+
+        色は各自 Photoshop などを利用して調べてください。
+
       */
     }
 
     .bgcolor-red {
-      background-color: #ffff33;
+      background-color: #ff3333;
     }
 
     /*
@@ -42,48 +45,86 @@
       text-decoration: underline;
     }
 
+    /*
+      文字に影をつけます
+    */
     .shadow {
       text-shadow: 2px 2px 5px #000;
     }
 
+
+    /*
+      p タグなどで囲われた領域に影をつけます
+    */
     .box-shadow {
       box-shadow: 2px 2px 5px #000;
     }
 
+
+    /*
+      文字間(レタースペーシング) を広げます
+    */
     .spacing {
       letter-spacing: 0.3em;
     }
 
+
+    /*
+      フォントをセリフ体に変更します
+    */
     .serif {
       font-family: serif;
     }
 
+    /*
+      フォントをサンセリフ体に変更します
+    */
     .sans-serif {
       font-family: sans-serif;
     }
 
+    /*
+      文字のサイズを 150% に大きくします
+    */
     .bigger {
       font-size: 150%;
     }
 
+
+    /*
+      文字のサイズを 70% に小さくします
+    */
     .smaller {
       font-size: 70%;
     }
 
+    /*
+      指定した領域に枠線をつけます
+    */
     .border {
       border-width: 2px;
       border-style: solid;
       border-color: #3ff;
     }
 
+
+    /*
+      指定した領域にマウスがのった時に文字の色を変更します
+    */
     .user-action-01:hover {
       color: aqua;
     }
 
+    /*
+      指定した領域でマウスがクリックされたら、テキストに下線をひきます
+    */
     .user-action-02:active {
       text-decoration: underline;
     }
 
+    /*
+      指定した領域にマウスがのったら、カーソルの形を変更します
+    */
     .user-action-03:hover {
       cursor: move;
     }
