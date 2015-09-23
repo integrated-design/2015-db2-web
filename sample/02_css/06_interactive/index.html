@@ -5,17 +5,27 @@
   <title>マウスに反応して色をかえる</title>
 
 
-  <!-- CSS の定義 -->
   <style>
-
-    body {
-      background-color: #ccc;
-    }
 
     .block {
       width: 200px;
       height: 200px;
     }
+
+    /*
+
+      クラス名のあとに :hover, :action などと書くと、
+      ある特的のタイミングだけ、 CSS を適用することができます。
+
+      :hover ... 指定した領域にマウスがのった時
+      :active ... 指定した領域でマウスがクリックされた時
+
+
+      このような コロン(:) をつかった指定方法を擬似クラスといいます。
+      興味がある人はほかにどんな指定方法があるかみてみましょう。
+      http://www.htmq.com/selector/link.shtml
+
+     */
 
     .color-action {
       background: #f33;
@@ -57,6 +67,8 @@
       text-decoration: none;
       color: #00ff00;
     }
+
+
   </style>
 
 </head>
