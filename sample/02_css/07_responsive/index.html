@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>レスポンシブのサンプル</title>
+
+  <!--
+  iPhone や スマホのブラウザ用に viewport を指定します
+  おまじないだと思って下さい。
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+    .responsive-test {
+      font-size: 20px;
+      color: white;
+
+      background-color: red;
+    }
+
+    /*
+
+    レスポンシブの指定には @media という命令を使います。
+    ここでは 600px 以下になると背景色の指定を青色になるように上書きしています。
+
+     */
+    @media (max-width: 600px) {
+      .responsive-test {
+        background-color: blue;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+
+<p class="responsive-test">レスポンシブのサンプルです。 window サイズが 600px 以下になると背景色が青色に変化します。</p>
+
+</body>
+</html>
