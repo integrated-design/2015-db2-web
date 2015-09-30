@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>マウスに反応して色をかえる</title>
+
+
+  <style>
+
+
+    /*
+
+      クラス名のあとに :hover, :action などと書くと、
+      ある特的のタイミングだけ、 CSS を適用することができます。
+
+      :hover ... 指定した領域にマウスがのった時
+      :active ... 指定した領域でマウスがクリックされた時
+
+
+      このような コロン(:) をつかった指定方法を擬似クラスといいます。
+      興味がある人はほかにどんな指定方法があるかみてみましょう。
+      http://www.htmq.com/selector/link.shtml
+
+     */
+
+    .color-animation {
+      transition: 0.3s ease-in-out;
+      width: 200px;
+      height: 200px;
+      background: #f33;
+    }
+
+    .color-animation:hover {
+      width: 250px;
+      height: 250px;
+      background: #3f3;
+    }
+
+    .color-animation:active {
+      width: 300px;
+      height: 300px;
+      padding: 0;
+      background: #33f;
+    }
+  </style>
+
+</head>
+<body>
+
+<h2>マウスに反応してゆっくりと色がかわる</h2>
+
+<div class="color-animation"></div>
+
+</body>
+</html>
