@@ -10,21 +10,17 @@
 
     /*
 
-      クラス名のあとに :hover, :action などと書くと、
-      ある特的のタイミングだけ、 CSS を適用することができます。
+      transition: をつかうことで「ある状態」と「ある状態」の変化をスムーズにアニメーションさせることができます。
 
-      :hover ... 指定した領域にマウスがのった時
-      :active ... 指定した領域でマウスがクリックされた時
-
-
-      このような コロン(:) をつかった指定方法を擬似クラスといいます。
-      興味がある人はほかにどんな指定方法があるかみてみましょう。
-      http://www.htmq.com/selector/link.shtml
-
+      0.3s ... 0.3 秒間かけてアニメーションする
+      ease-in-out ... 徐々に加速して、徐々に減速する動きでアニメーションする http://www.htmq.com/css3/transition-timing-function.shtml
      */
 
     .color-animation {
+
       transition: 0.3s ease-in-out;
+
+
       width: 200px;
       height: 200px;
       background: #f33;
