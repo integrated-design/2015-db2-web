@@ -13,37 +13,30 @@
       ブロックレベル要素である div を使ってレイアウトを調整します。
     */
 
+    .box {
+      width: 640px;
+      height: 640px;
+      background: gray;
+    }
+
     /*
       なにも位置を指定しないと、ボックスは左に寄る。
     */
     .layout-left {
-      width: 640px;
-      height: 640px;
-      background: #3ff;
     }
-
 
     /*
       左右に margin を auto にすると、ボックスは中央に配置される。
     */
     .layout-center {
-      width: 640px;
-      height: 640px;
-      background: #f3f;
-
       margin-left: auto;
       margin-right: auto;
     }
-
 
     /*
       右の margin を 0 に、左を auto にすると、ボックスは右に配置される。
     */
     .layout-right {
-      width: 640px;
-      height: 640px;
-      background: #ff3;
-
       margin-left: auto;
       margin-right: 0;
     }
@@ -53,11 +46,15 @@
 </head>
 <body>
 
-<div class="layout-left">左寄せのボックス</div>
+<div class="box layout-left">左寄せのボックス</div>
 
-<div class="layout-center">中央寄せのボックス</div>
+<hr>
 
-<div class="layout-right">右寄せのボックス</div>
+<div class="box layout-center">中央寄せのボックス</div>
+
+<hr>
+
+<div class="box layout-right">右寄せのボックス</div>
 
 </body>
 </html>
