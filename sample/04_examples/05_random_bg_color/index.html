@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>背景色をランダムに変更</title>
+
+
+  <style>
+
+    body.bg-red {
+      background-color: red;
+    }
+
+    body.bg-blue {
+      background-color: blue;
+    }
+
+    body.bg-green {
+      background-color: green;
+    }
+
+  </style>
+
+  <!--
+    背景色回変えるために JavaScript と jQuery を利用します。
+  -->
+  <script src="../js/libs/jquery-2.1.4.min.js"></script>
+  <script>
+
+    // ページが読みこまれたら処理を開始します
+    $(document).ready(function () {
+
+      // random という変数に、整数 0, 1, 2 のどれかをいれます
+      var random = Math.floor(Math.random() * 3);
+
+
+      // もしランダムが 0 なら body に bg-red というクラスを追加する
+      // もしランダムが 1 なら body に bg-blue というクラスを追加する
+      // もしランダムが 2 なら body に bg-green というクラスを追加する
+      if (random === 0) {
+
+        $('body').addClass('bg-red');
+
+      } else if (random === 1) {
+
+        $('body').addClass('bg-blue');
+
+      } else if (random === 2) {
+
+        $('body').addClass('bg-green');
+
+      }
+
+    })
+  </script>
+
+</head>
+<body>
+
+背景色をランダムに変更
+
+</body>
+</html>
