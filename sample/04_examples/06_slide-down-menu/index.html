@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>上下に開閉するメニューをつくる</title>
+
+
+  <style>
+
+    .js-menu{
+      background-color: #000;
+      color: #fff;
+    }
+
+  </style>
+
+  <!--
+    上下に開閉するメニューをつくるにも JavaScript と jQuery を利用します。
+  -->
+  <script src="../js/libs/jquery-2.1.4.min.js"></script>
+
+  <script>
+
+    // ページが読みこまれたら処理を開始します
+    $(document).ready(function () {
+
+      //
+      // jQuery では $('xxxxxx') とかくことで、
+      // html の要素を選び出すことができます。
+      // 詳しくは 「jQuery セレクタ」 などで検索するといろいろ出てきます。
+      //
+      // jQuery には slideDown, slideUp, faceIn, fadeOut など
+      // さまざまなアニメーションにまつわる機能が備わっています。
+      // 今回は 「上下に開閉する」 動きなので、slideDown, slideUp をつかいます。
+      //
+
+      var $menu = $('.js-menu');          // js-menu というクラス名のついた要素を取得
+      var $btnOpen = $('.js-open');       // js-open というクラス名のついた要素を取得
+      var $closeOpen = $('.js-close');    // js-close というクラス名のついた要素を取得
+
+
+      // $btnOpen をクリックしたら
+      $btnOpen.on("click", function(){
+
+        // メニューをスライドダウンさせて表示する
+        $menu.slideDown({
+          duration: 300
+        })
+      });
+
+      // $btnClose をクリックしたら
+      $closeOpen.on("click", function(){
+
+        // メニューをスライドアップさせて隠す
+        $menu.slideUp({
+          duration: 300
+        })
+      });
+    })
+  </script>
+
+</head>
+<body>
+
+<h3>上下に開閉するメニュー</h3>
+
+<p><a href="javascript:void(0);" class="js-open">メニューをひらく</a> / <a  href="javascript:void(0);" class="js-close">メニューをとじる</a></p>
+
+<ul class="js-menu">
+  <li>メニュー1</li>
+  <li>メニュー2</li>
+  <li>メニュー3</li>
+  <li>メニュー4</li>
+  <li>メニュー5</li>
+  <li>メニュー6</li>
+  <li>メニュー7</li>
+  <li>メニュー8</li>
+  <li>メニュー9</li>
+  <li>メニュー10</li>
+</ul>
+
+</body>
+</html>
