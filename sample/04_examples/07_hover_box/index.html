@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ロールオーバーで説明がでる</title>
+
+
+  <style>
+
+
+    /**/
+    .box{
+      position: relative;
+      display: block;
+      width: 400px;
+      height: 400px;
+    }
+
+
+
+    .cover{
+      width: 400px;
+      height: 400px;
+      background: rgba(0,0,0,0.8);
+
+      position:absolute;
+      top:0;
+      left:0;
+      z-index: 10;
+    }
+
+    .content{
+      position:relative;
+    }
+
+
+    /* box にマウスを載せた時、 box の中にある cover の不透明度を 0 にするよ  */
+    .box:hover .cover{
+      opacity: 0;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<a href="#" class="box">
+  <div class="cover">上のレイヤー</div>
+  <img class="content" src="images/red.jpg" width="400" height="400" alt="">
+</a>
+
+<a href="#" class="box">
+  <div class="cover">上のレイヤー</div>
+  <img class="content" src="images/red.jpg" width="400" height="400" alt="">
+</a>
+
+<a href="#" class="box">
+  <div class="cover">上のレイヤー</div>
+  <img class="content" src="images/red.jpg" width="400" height="400" alt="">
+</a>
+
+<a href="#" class="box">
+  <div class="cover">上のレイヤー</div>
+  <img class="content" src="images/red.jpg" width="400" height="400" alt="">
+</a>
+
+</body>
+</html>
