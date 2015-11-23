@@ -11,12 +11,21 @@ body{
 /*
 
 レスポンシブの指定には @media という命令を使います。
-ここでは 600px 以下になると背景色の指定を青色になるように上書きしています。
 
  */
+
+/* ウィンドウが 600px 以下のとき */
 @media (max-width: 600px) {
   .responsive {
     font-size: 16px;
     background-color: blue;
+  }
+}
+
+/* ウィンドウが 601px〜980px のとき */
+@media  (min-width: 601px) and (max-width: 980px) {
+  .responsive {
+    font-size: 18px;
+    background-color: green;
   }
 }
