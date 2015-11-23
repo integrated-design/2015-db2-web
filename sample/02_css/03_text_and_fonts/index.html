@@ -4,185 +4,56 @@
   <meta charset="UTF-8">
   <title>文字を装飾する</title>
 
+  <link rel="stylesheet" href="style.css">
 
-
-  <!-- CSS はここから -->
-  <style>
-    .color-red {
-      color: #ff0000;
-      /*
-
-        color: red;
-        color: rgb(255,255,255);
-        とも書くことができます。
-
-        ※ この後に詳しく解説します。
-
-      */
-    }
-
-
-    /*
-    背景色を赤 (#ff3333) にします。
-    */
-    .bgcolor-red {
-      background-color: #ff3333;
-    }
-
-    /*
-      フォントを太字にします
-    */
-    .bold {
-      font-weight: bold;
-    }
-
-    /*
-      フォントを斜体にします
-    */
-    .italic {
-      font-style: italic;
-    }
-
-    /*
-      下線をひきます
-    */
-    .underline {
-      text-decoration: underline;
-    }
-
-    /*
-      文字に影をつけます
-    */
-    .shadow {
-      text-shadow: 2px 2px 5px #000;
-    }
-
-
-    /*
-      p タグなどで囲われた領域に影をつけます
-    */
-    .box-shadow {
-      box-shadow: 2px 2px 5px #000;
-    }
-
-
-    /*
-      文字間(レタースペーシング) を広げます
-    */
-    .spacing {
-      letter-spacing: 0.3em;
-    }
-
-
-    /*
-      フォントをセリフ体に変更します
-    */
-    .serif {
-      font-family: serif;
-    }
-
-    /*
-      フォントをサンセリフ体に変更します
-    */
-    .sans-serif {
-      font-family: sans-serif;
-    }
-
-    /*
-      文字のサイズを 150% に大きくします
-    */
-    .bigger {
-      font-size: 150%;
-    }
-
-
-    /*
-      文字のサイズを 70% に小さくします
-    */
-    .smaller {
-      font-size: 70%;
-    }
-
-    /*
-      指定した領域に枠線をつけます
-    */
-    .border {
-      border-width: 2px;
-      border-style: solid;
-      border-color: #3ff;
-    }
-
-
-    /*
-      指定した領域にマウスがのった時に文字の色を変更します
-    */
-    .user-action-01:hover {
-      color: aqua;
-    }
-
-    /*
-      指定した領域でマウスがクリックされたら、テキストに下線をひきます
-    */
-    .user-action-02:active {
-      text-decoration: underline;
-    }
-
-    /*
-      指定した領域にマウスがのったら、カーソルの形を変更します
-    */
-    .user-action-03:hover {
-      cursor: move;
-    }
-
-  </style>
 </head>
 <body>
 
 <h1>文字を装飾する</h1>
 
-<h2>文字の色・スタイルを変える</h2>
+<p>CSS には文字を装飾するさまざまな命令が存在しています。ここでは代表的なものをいくつか紹介します。装飾の方法は他にもまだまだたくさんあります。ほかに、どんな装飾があるかは、専門の本や、ネットで各自しらべましょう。</p>
 
-<p class="color-red">文字に色をつける</p>
-
-<p class="bgcolor-red">文字の背景に色をつける</p>
-
-<p class="bold">文字を太く！</p>
-
-<p class="italic">文字を斜めに…</p>
-
-<p class="underline">下線をひく</p>
-
-<p class="border">枠でかこう</p>
-
-<p class="shadow">影をつける</p>
-
-<p class="box-shadow">影をつける その2</p>
-
-<p class="spacing">文字間をひろくする、文字間をひろくする。</p>
-
-<p class="bigger">大きく！<span class="bigger">大きく！</span></p>
-
-<p class="smaller">小さく… <span class="smaller">小さく…</span></p>
+<hr>
 
 
-<hr/>
+<h2>文字に色をつける</h2>
+<p class="sample-01">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+
+<h2>文字の背景に色をつける</h2>
+<p class="sample-02">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+<h2>文字を太くする</h2>
+<p class="sample-03">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+<h2>文字を斜めにする</h2>
+<p class="sample-04">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+<h2>下線をひく</h2>
+<p class="sample-05">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+<h2>文字に影をつける</h2>
+<p class="sample-06">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+<h2>文字間をひろくする</h2>
+<p class="sample-07">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
+
+<h2>文字サイズを大きくする</h2>
+<p class="sample-08">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<hr>
 
 <h2>書体をかえる</h2>
-
-<p class="sans-serif bigger">This font is sans-serif. | サンセリフ体 (ゴシック)</p>
-
-<p class="serif bigger">This font is serif. | セリフ体 (ゴシック)</p>
-
-
+<p class="sample-09-01">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<p class="sample-09-02">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
 <hr/>
 
-<h2>ユーザの動きに反応させる</h2>
-
-<p class="user-action-01">マウスをのせると色がかわる</p>
-
-<p class="user-action-02">クリックすると下線がつく</p>
-
-<p class="user-action-03">マウスをのせるとカーソルの形がかわる</p>
 
 </body>
 </html>

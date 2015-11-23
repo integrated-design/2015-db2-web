@@ -1,0 +1,71 @@
+
+.sample-01{
+   color: red;
+}
+
+
+/*
+背景色を赤 (#ff3333) にします。
+*/
+.sample-02 {
+  background-color: yellow;
+}
+
+/*
+  フォントを太字にします
+*/
+.sample-03 {
+  font-weight: bold;
+}
+
+/*
+  フォントを斜体にします
+*/
+.sample-04 {
+  font-style: italic;
+}
+
+/*
+  下線をひきます
+*/
+.sample-05 {
+  text-decoration: underline;
+}
+
+
+/*
+  文字に影をつけます
+*/
+.sample-06 {
+  text-shadow: 3px 3px 5px gray;
+}
+
+
+/*
+  文字間(レタースペーシング) を広げます
+*/
+.sample-07 {
+  letter-spacing: 0.3em;
+}
+
+/*
+  文字のサイズを 150% に大きくします
+*/
+
+.sample-8 {
+  font-size: 150%;
+}
+
+/*
+  フォントをセリフ体に変更します
+*/
+.sample-09-01 {
+  font-family: serif;
+}
+
+/*
+  フォントをサンセリフ体に変更します
+*/
+.sample-09-02 {
+  font-family: sans-serif;
+}

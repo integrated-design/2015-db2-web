@@ -5,32 +5,26 @@
   <title>文字のデザインを変える</title>
 
   <!--
-  Google の Webfont を使うには
-  以下のような CSS を読みこむ必要がある。
+  Google のウェブフォントを使うには以下のように Google から CSS を読みこむ必要がある。
+  これによって Google から配信される Webfont の文字データを利用することができるようになる。
 
-  これによって Google から Webfont の文字 Lobster のデータを読みこむ
+  Google fonts: https://www.google.com/fonts
+
   -->
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-
-  <!-- CSS はここから -->
-  <style>
-
-    /* Lobster フォントを使用する */
-    .web-font {
-      font-family: 'Lobster', cursive;
-      font-size: 300%;
-    }
-  </style>
+  <!--
+  この html と同じ階層の webfont.css も読みこむ
+  -->
+  <link rel="stylesheet" href="webfont.css">
 </head>
 <body>
 
 <h1>Webfont を利用する</h1>
 
 <p class="web-font">
-  This is the Google Webfonts.
-
-  <a href="https://www.google.com/fonts" target="_blank"> Visit Google Webfont </a>
+  This is the Google Webfont example. <br/>
+  <a href="https://www.google.com/fonts" target="_blank"> Visit Google Webfonts.</a>
 </p>
 
 </body>
