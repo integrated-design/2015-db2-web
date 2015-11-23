@@ -52,7 +52,7 @@
   文字のサイズを 150% に大きくします
 */
 
-.sample-8 {
+.sample-08 {
   font-size: 150%;
 }
 
@@ -60,6 +60,7 @@
   フォントをセリフ体に変更します
 */
 .sample-09-01 {
+  font-size: 125%;
   font-family: serif;
 }
 
@@ -67,5 +68,13 @@
   フォントをサンセリフ体に変更します
 */
 .sample-09-02 {
+  font-size: 125%;
   font-family: sans-serif;
+}
+
+/*
+  テキストを中央揃えにします。
+*/
+.sample-10 {
+  text-align: center;
 }
