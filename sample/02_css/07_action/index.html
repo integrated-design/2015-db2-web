@@ -4,89 +4,17 @@
   <meta charset="UTF-8">
   <title>マウスに反応して色をかえる</title>
 
-
-  <style>
-
-    .block {
-      width: 200px;
-      height: 200px;
-    }
-
-    /*
-
-      クラス名のあとに :hover, :action などと書くと、
-      ある特的のタイミングだけ、 CSS を適用することができます。
-
-      :hover ... 指定した領域にマウスがのった時
-      :active ... 指定した領域でマウスがクリックされた時
-
-
-      このような コロン(:) をつかった指定方法を擬似クラスといいます。
-      興味がある人はほかにどんな指定方法があるかみてみましょう。
-      http://www.htmq.com/selector/link.shtml
-
-     */
-
-    .color-action {
-      background: #f33;
-    }
-
-    .color-action:hover {
-      background: #3f3;
-    }
-
-    .color-action:active {
-      background: #33f;
-    }
-
-    .border-action {
-      border-color: #000;
-      border-width: 5px;
-      border-style: solid;
-    }
-
-    .border-action:hover {
-      border-style: dotted;
-    }
-
-    .border-action:active {
-      border-style: double;
-    }
-
-    .link {
-      text-decoration: underline;
-      color: #0000ff;
-    }
-
-    .link:hover {
-      text-decoration: dotted;
-      color: #ff0000;
-    }
-
-    .link:active {
-      text-decoration: none;
-      color: #00ff00;
-    }
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-<h2>マウスに反応して色がかわる</h2>
-
-<div class="block color-action"></div>
 
 
-<h2>マウスに反応してボーダーがかわる</h2>
-
-<div class="block border-action"></div>
-
-<h2>マウスに反応して文字の装飾がかわる</h2>
-
-<a class="link" href="#">サンプル サンプル サンプル サンプル</a>
-
+<div class="box action-01">マウスに反応して色が変わる</div>
+<div class="box action-02">マウスに反応して枠線が変わる</div>
+<div class="box action-03"><a href="http://yahoo.co.jp">マウスに反応して文字の装飾が変わる。マウスに反応して文字の装飾が変わる。マウスに反応して文字の装飾が変わる。</a></div>
+<div class="box action-04">マウスに反応してゆっくり変化する</div>
 
 </body>
 </html>

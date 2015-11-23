@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+
+/* padding は内側に余白を作ります */
+.padding-box {
+
+  background-color: silver;
+
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+/* margin は外側に余白を作ります */
+.margin-box {
+
+  background-color: silver;
+
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}

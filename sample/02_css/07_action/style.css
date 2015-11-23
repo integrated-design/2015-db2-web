@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+}
+
+.box {
+  width: 640px;
+  height: 480px;
+  background-color: silver;
+
+  margin-bottom: 50px;
+}
+
+/*
+
+  クラス名のあとに :hover, :action などと書くと、
+  ある特的のタイミングだけ、 CSS を適用することができます。
+
+  :hover ... 指定した領域にマウスがのった時
+  :active ... 指定した領域でマウスがクリックされた時
+
+
+  このような コロン(:) をつかった指定方法を擬似クラスといいます。
+  興味がある人はほかにどんな指定方法があるかみてみましょう。
+  http://www.htmq.com/selector/link.shtml
+
+ */
+
+/*
+  01. 背景色を変える
+*/
+.action-01 {
+  background-color: #f33;
+}
+
+.action-01:hover {
+  background-color: #3f3;
+}
+
+.action-01:active {
+  background-color: #33f;
+}
+
+
+
+/*
+  02. 枠線の形を変える
+*/
+.action-02 {
+  border-color: #000;
+  border-width: 5px;
+  border-style: solid;
+
+  box-sizing: border-box;
+}
+
+.action-02:hover {
+  border-style: dotted;
+}
+
+.action-02:active {
+  border-style: double;
+}
+
+
+/*
+  03. 文字の装飾を変える
+*/
+
+.action-03 a{
+  text-decoration: none;
+
+  color: blue;
+}
+
+.action-03 a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: blue;
+}
+
+.action-03 a:active {
+  text-decoration: line-through;
+  color: blue;
+}
+
+
+
+
+/*
+
+  04. ゆっくり変化する
+
+
+  transition: をつかうことで「ある状態」と「ある状態」の変化をスムーズにアニメーションさせることができます。
+    - 0.3s ... 0.3 秒間かけてアニメーションする
+    - ease-in-out ... 徐々に加速して、徐々に減速する動きでアニメーションする http://www.htmq.com/css3/transition-timing-function.shtml
+ */
+.action-04 {
+  transition: 0.3s ease-in-out;
+  background: #f33;
+}
+
+.action-04:hover {
+  background: #3f3;
+  width: 660px;
+  height: 500px;
+}
+
+.action-04:active {
+  background: #33f;
+  width: 680px;
+  height: 520px;
+}

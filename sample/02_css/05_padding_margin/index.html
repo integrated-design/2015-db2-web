@@ -4,85 +4,30 @@
   <meta charset="UTF-8">
   <title>padding と margin</title>
 
-  <!-- この 2つのファイルはおまじないだと思って無視してください -->
-  <link rel="stylesheet" href="override/normalize.css">
-  <link rel="stylesheet" href="override/utils.css">
-
-
-  <!-- CSS の定義 -->
-  <style>
-
-    div {
-      background: #f33;
-      line-height: 0;
-      margin: 0;
-      padding:0;
-
-    }
-
-    /* marginを設定します。 */
-    .margin-50 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    /* paddingを設定します。 */
-    .padding-50 {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    .padding-margin-50 {
-      /*
-      top, left, right, bottom とかかなくても省略すると、
-      4つの方向にどれも適用されます。
-      */
-      padding: 50px;
-      margin: 50px;
-    }
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
+<!-- ==========================================================
 
-<h1>padding と margin</h1>
-<p>padding と margin は CSS で余白をつくるために使います。似ているけど違う、違うけれど似ているこの2つの違いをしっかりマスターしましょう。</p>
+  padding と margin
 
-<hr>
+  padding と margin は CSS で余白をつくるために使います。
+  一般的に padding は「内側の余白」、そして margin は外側の余白を指定するのに利用します。
+  似ているけど違う、違うけれど似ているこの2つをしっかりマスターしましょう。
 
-<h2>指定なし</h2>
-<p>なにも指定していません。この場合 margin も padding も 0 になります。</p>
-<!-- ☟ ここに注目 -->
-<div class=""><img src="http://placehold.it/500x500" width="500" height="500" alt=""/></div>
-<!-- ☝ ここに注目 -->
+========================================================== -->
 
+<div class="padding-box">
+  padding をつかって内側の余白を確保します。  padding をつかって内側の余白を確保します。  padding をつかって内側の余白を確保します。  padding をつかって内側の余白を確保します。  padding をつかって内側の余白を確保します。padding をつかって内側の余白を確保します。
+</div>
 
-<h2>padding を 50px とる</h2>
-<p>padding を 50px 指定しています。この場合 div の **内側** に50pxの余白とられます。</p>
-<!-- ☟ ここに注目 -->
-<div class="padding-50"><img src="http://placehold.it/500x500" width="500" height="500" alt=""/></div>
-<!-- ☝ ここに注目 -->
-
-<h2>margin を 50px とる</h2>
-<p>margin を 50px 指定しています。この場合 div の **外側** に50pxの余白とられます。</p>
-<!-- ☟ ここに注目 -->
-<div class="margin-50"><img src="http://placehold.it/500x500" width="500" height="500" alt=""/></div>
-<!-- ☝ ここに注目 -->
-
-
-<h2>margin と padding を 50px とる</h2>
-<p>margin を 50px 指定しています。この場合 div の **内側と外側** に50pxの余白とられます。</p>
-<!-- ☟ ここに注目 -->
-<div class="padding-margin-50"><img src="http://placehold.it/500x500" width="500" height="500" alt=""/></div>
-<!-- ☝ ここに注目 -->
-
+<!--
+<div class="margin-box">
+  margin をつかって外側の余白を確保します。margin をつかって外側の余白を確保します。margin をつかって外側の余白を確保します。margin をつかって外側の余白を確保します。margin をつかって外側の余白を確保します。margin をつかって外側の余白を確保します。margin をつかって外側の余白を確保します。
+</div>
+-->
 
 </body>
 </html>
