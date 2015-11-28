@@ -1,0 +1,40 @@
+/*
+  高さと幅を px 指定する
+  div はもともと display: block の html タグのため、
+  display: block; 指定を省いています。
+
+*/
+.width-height-01 {
+  width: 400px;
+  height: 400px;
+  background-color: silver;
+}
+
+/*
+  幅をパーセントで指定する
+  div はもともと display: block の html タグのため
+  display: block; 指定を省いています。
+*/
+.width-height-02 {
+  width: 50%; /* window の幅に対して 50% の幅をキープする*/
+  height: 400px;
+  background-color: silver;
+}
+
+/*
+  ※ height をパーセント指定するにはひとくせあります
+  高さ指定は、親要素の高さを指定する必要があるため、
+  以下のように指定することで、高さを指定できます。
+
+  html, body{
+    height:100%;
+  }
+
+  .width-height-02 {
+    height: 50%;
+    width: 50%;
+    background-color: silver;
+  }
+*/
+
+

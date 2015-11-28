@@ -1,0 +1,12 @@
+
+/*
+  目印のために点線をつける
+*/
+
+.block-sample {
+  border: 1px dotted #000;
+}
+
+.inline-sample {
+  border: 1px dotted #000;
+}
