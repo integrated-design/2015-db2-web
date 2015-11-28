@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.main-content {
+  width: 640px;
+}
+h1, h2, p, img{
+  border: 1px dotted #000;
+}
+
+
+
+
+/*
+  Tim さんの画像を右側にフロートさせる
+
+  float:
+    - left;
+    - right;
+*/
+
+.tim-image {
+}
+
+
+
+/*
+  tim さんの画像のフロートを解除する
+
+  clear:
+    - left;
+    - right;
+    - both;
+*/
+
+.title-steve{
+}
