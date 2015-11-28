@@ -4,10 +4,6 @@
   <meta charset="UTF-8">
   <title>スライドショーのサンプル</title>
 
-  <!-- おまじない -->
-  <link rel="stylesheet" href="../css/override/normalize.css"/>
-  <link rel="stylesheet" href="../css/override/utils.css"/>
-
   <!--
   スライドショー (カルーセル) のサンプルでは
   OWL Carousel というプラグインを利用します。
@@ -18,21 +14,19 @@
   -->
   <!--  Owl 用のスタイルシート読み込み -->
   <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-
-  <!-- 基本テーマを読み込み -->
   <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="style.css">
 
   <!--  jQuery という JavaScript のライブラリを読み込み  -->
   <script src="jquery-1.9.1.min.js"></script>
-
-  <!-- Owl の JavaScript を読み込み -->
   <script src="owl-carousel/owl.carousel.js"></script>
+
+
 
   <!-- JavaScript を使ってスライドショーを表示 -->
   <script>
     // このドキュメントがブラウザに読みこまれたら処理を開始する
     $(document).ready(function() {
-
       // 処理: `js-slide-show` という id がついた html で owlCarousel を実行する
       $("#js-slide-show").owlCarousel({
         navigation : true,
@@ -43,34 +37,21 @@
     });
   </script>
 
-
-  <style>
-    /* wrap は幅 640px で中央寄せ */
-    .wrap{
-      width: 640px;
-      /*margin: 0 auto;*/
-      /*background: #eee;*/
-    }
-  </style>
-
 </head>
 <body>
 
-<!-- 全体を中央に配置するために wrap という div で囲います -->
-<div class="wrap">
-  <h1>スライドショーをつくる</h1>
-    <div id="js-slide-show" class="owl-carousel">
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-      <div><img src="http://placehold.it/640x480" alt=""></div>
-    </div>
+<h1>スライドショーをつくる</h1>
+
+<div id="js-slide-show" class="owl-carousel">
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
+  <div><img src="http://placehold.it/640x480" alt=""></div>
 </div>
-<!-- .wrap はここまでです -->
 
 </body>
 </html>

@@ -1,0 +1,26 @@
+/*
+  最大幅を 980px として、画面の中央にくるようにします。
+*/
+.wrap {
+  max-width: 980px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: lightblue;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+
+  background-color: lightcoral;
+}
+
+.menu li {
+  display: inline; /* インライン要素に変換して横に並べる */
+  margin-right: 1em;
+
+  background-color: lightgreen;
+}

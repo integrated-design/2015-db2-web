@@ -3,58 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>メニューが上にくるレイアウト</title>
-
-  <!-- ここで css を別のファイルから読み込んでいます -->
-  <link rel="stylesheet" href="../css/override/normalize.css"/>
-  <link rel="stylesheet" href="../css/override/utils.css"/>
-
-  <style>
-    /* 最大幅を 980px として、画面の中央にくるようにします。 */
-    .wrap {
-      max-width: 980px;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-
-      background: #ccc;
-    }
-
-    /*
-      リスト表示ではなく横並びにするためにスタイルを設定します。
-      float をつかって左側にメニューを、右側にコンテンツを持ってきます。
-    */
-    .menu {
-      padding: 0;
-      /* 幅 30% で左にします */
-      width: 30%;
-      float: left;
-
-      background: #fcc;
-    }
-
-    /* リストスタイルをやめる */
-    .menu li {
-      list-style: none;
-      margin-bottom: 10px;
-      background: #ccf;
-    }
-
-    /* 幅 70% で右の位置にします */
-    .main {
-      width: 70%;
-      float: right;
-      background: #cfc;
-    }
-  </style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- 全体を中央に配置するために wrap という div で囲います -->
-<div class="wrap cf">
+<div class="wrap">
 
-  <!-- ここから .menu です -->
   <ul class="menu">
     <li><a href="#">メニュー1</a></li>
     <li><a href="#">メニュー2</a></li>
@@ -62,25 +17,20 @@
     <li><a href="#">メニュー4</a></li>
     <li><a href="#">メニュー5</a></li>
   </ul>
-  <!-- .menu はここまで -->
 
-  <!-- ここがメインのコンテンツエリアです -->
+
+
   <div class="main">
-
     <h1>タイトル</h1>
-
     <p>
       多摩美術大学（たまびじゅつだいがく、英語: Tama Art University）は、東京都世田谷区上野毛三丁目15番34号に本部を置く日本の私立大学である。1953年に設置された。大学の略称は多摩美（たまび）。
       校風は自由な発想と専門技能の重視。初代校長はグラフィックデザイナーの杉浦非水であることからデザインに対し先駆的な試みや教育が行われており、卒業生の多くはデザインの現場や実務に携わるとされる。
       キャンパスは世田谷区と八王子市の2キャンパス。付属施設に多摩美術大学美術館（多摩市）がある。
       学内でのイベントの開催も多く、第1回「TAMAVIVANT」展（1984年）や第1回東京国際ミニプリント・トリエンナーレ展（1995年）などが注目を集めた。付属研究所として、美術館の他、芸術人類学研究所がある。
     </p>
-
   </div>
-  <!-- .main はここまで -->
 
 </div>
-<!-- .wrap はここまでです -->
 
 </body>
 </html>

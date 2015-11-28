@@ -1,0 +1,9 @@
+.kadomaru{
+  border: 1px solid black;
+
+  width: 400px;
+  height: 400px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}

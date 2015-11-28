@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+/*
+  ブロックレベル要素である div を使ってレイアウトを調整します。
+*/
+
+.box {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+/* なにも位置を指定しないと、ボックスは左に*/
+.layout-left {
+  background-color: lightcoral;
+}
+
+/* 左右に margin を auto にすると、ボックスは中央に配置される。*/
+.layout-center {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: lightblue;
+}
+
+/*  右の margin を 0 に、左を auto にすると、ボックスは右に配置される。*/
+.layout-right {
+  margin-left: auto;
+  margin-right: 0;
+
+  background-color: lightgreen;
+}

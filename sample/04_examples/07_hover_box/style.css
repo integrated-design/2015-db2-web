@@ -1,0 +1,36 @@
+.box{
+  position: relative;
+  display: block;
+  width: 902px;
+  height: 441px;
+}
+
+
+
+.cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+  color: #fff;
+  text-align: center;
+}
+
+.content{
+  position:relative;
+}
+
+
+/*
+box にマウスを載せた時、 box の中にある cover の不透明度を 0 にする
+ */
+.box:hover .cover{
+  opacity: 1;
+}

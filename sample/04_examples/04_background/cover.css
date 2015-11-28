@@ -1,0 +1,26 @@
+
+/*
+  背景用のレイヤーをページの全面にひく
+*/
+.background-layer {
+  position: fixed;
+  z-index: 0;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-image: url("http://placehold.it/1000x1000");
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+  コンテンツ用のレイヤーを背景レイヤーの手前におく
+*/
+.content-layer {
+  z-index: 1;
+  position: relative;
+}

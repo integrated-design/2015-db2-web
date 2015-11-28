@@ -1,0 +1,29 @@
+.wrap {
+  max-width: 980px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grid-list li {
+  /*
+    ブロックを左に巻き込むようにします。
+  */
+  float: left;
+
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 10px;
+  width: 24%;
+  height: 200px;
+
+  background: lightblue;
+}
+

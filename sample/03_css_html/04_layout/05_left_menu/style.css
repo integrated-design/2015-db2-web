@@ -1,0 +1,41 @@
+/* 最大幅を 980px として、画面の中央にくるようにします。 */
+.wrap {
+  max-width: 980px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: lightblue;
+}
+
+/*
+  リスト表示ではなく横並びにするためにスタイルを設定します。
+  float をつかって左側にメニューを、右側にコンテンツを持ってきます。
+*/
+.menu {
+  padding: 0;
+  /* 幅 30% で左にします */
+  width: 30%;
+  float: left;
+
+  background: lightcoral;
+}
+
+/* リストスタイルをやめる */
+.menu li {
+  list-style: none;
+  margin-bottom: 10px;
+  background: lightgreen;
+}
+
+/* 幅 70% で右の位置にします */
+.main {
+  width: 70%;
+  float: right;
+  background: lightgoldenrodyellow;
+}
+
+.clear{
+  clear: both;
+}

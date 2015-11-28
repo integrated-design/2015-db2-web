@@ -1,0 +1,33 @@
+
+
+.block {
+  width: 960px;
+  height: 400px;
+  border: 1px solid #666;
+  margin: 40px;;
+  background-color: #eeeeee;
+  background-image: url("http://placehold.it/200x200");
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.contain {
+  background-image: url("http://placehold.it/1000x1000");
+  background-size: contain;
+  background-position: center;
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+}
+
+.repeat-x {
+  background-repeat: repeat-x;
+}
+
+.repeat-y {
+  background-repeat: repeat-y;
+}
