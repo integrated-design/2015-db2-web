@@ -57,7 +57,7 @@ body {
 }
 
 .nostyle-list li .mini-date {
-  margin-left: 20px;
+  margin-left: 1em;
 }
 
 .banners {
@@ -130,8 +130,9 @@ body {
 /* ページレイアウト > お知らせエリア
  =================================================================== */
 .nortice-area {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  background-color: #f0f0f0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nortice-area h3 {
