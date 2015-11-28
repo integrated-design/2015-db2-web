@@ -1,0 +1,143 @@
+/* 基本的な設定
+=================================================================== */
+body {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.mini-date {
+  font-size: 0.8em;
+  color: silver;
+}
+
+/* 繰り返しつかう class > 中央にくるレイアウト
+=================================================================== */
+.center-column {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.wide-center-column {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 繰り返しつかう class >  横並びのナビゲーション
+ =================================================================== */
+.simple-nav {
+  list-style: none;
+}
+
+.simple-nav li {
+  display: inline;
+  margin-right: 2em;
+  padding-bottom: 0.5em;
+}
+
+.simple-nav li.current {
+  border-bottom: 1px solid gray;
+}
+
+/* 繰り返しつかう class >  シンプルなリスト
+ =================================================================== */
+.nostyle-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nostyle-list li .mini-date {
+  margin-left: 20px;
+}
+
+.banners {
+  list-style: none;
+  padding: 0;
+}
+
+/* 繰り返しつかう class > バナーのデザイン
+ =================================================================== */
+
+.banners .banner {
+  width: 200px;
+  margin-right: 20px;
+  background-color: white;
+  float: left;
+  padding: 10px;
+}
+
+.banners .banner img {
+  max-width: 100%;
+}
+
+/* ページレイアウト > ヘッダーエリア
+=================================================================== */
+
+.header .logo {
+  float: left;
+  width: 120px;
+  height: 80px;
+  margin-right: 100px;
+}
+
+.header .simple-nav {
+  float: left;
+}
+
+/* ページレイアウト > バナーエリア
+=================================================================== */
+
+.banner-area {
+  background-color: #f0f0f0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+/* ページレイアウト > ニュースエリア
+=================================================================== */
+
+.news-area .banner {
+  text-align: center;
+  transition: 0.1s ease-in-out;
+}
+
+.news-area .banner:hover {
+  background-color: #f0f0f0;
+}
+
+.news-area .links-more {
+  text-align: right;
+}
+
+/* ページレイアウト > お知らせエリア
+ =================================================================== */
+.nortice-area {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nortice-area h3 {
+  float: left;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.nortice-area .nostyle-list {
+  margin-left: 240px;
+}
+
+/* ページレイアウト > footer
+ =================================================================== */
+.footer {
+  padding: 30px;
+  background-color: black;
+  color: #fff;
+}
